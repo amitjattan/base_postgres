@@ -1,4 +1,7 @@
 #!/usr/bin/env ansible-playbook
-- hosts: dataservers
+#- hosts: dataservers
+- hosts: artifactory
+  become: yes
+  become_method: sudo
   roles:
     - role: base_postgres_role
