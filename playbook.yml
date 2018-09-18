@@ -4,4 +4,4 @@
   become: yes
   become_method: sudo
   roles:
-    - role: base_postgres_role
+    - role: base_postgres
